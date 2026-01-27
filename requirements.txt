@@ -12,7 +12,7 @@ pydub
 onnxruntime
 git+https://github.com/ysharma3501/LinaCodec.git
 librosa
-transformers
+transformers<=4.57.6
 
 # Normalization
 cn2an

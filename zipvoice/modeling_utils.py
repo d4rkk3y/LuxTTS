@@ -93,7 +93,7 @@ def generate(prompt_tokens, prompt_features_lens, prompt_features, prompt_rms, t
 def load_models_gpu(model_path=None):
     params = LuxTTSConfig()
     if model_path is None:
-        model_path = snapshot_download("YatharthS/LuxTTS")
+        model_path = snapshot_download("vuhoanhuy/zv")
     
     token_file = f"{model_path}/tokens.txt"
     model_ckpt = f"{model_path}/model.pt"
@@ -128,7 +128,7 @@ def load_models_cpu(model_path = None, num_thread=2):
     params = LuxTTSConfig()
     params.seed = 42
 
-    model_path = snapshot_download('YatharthS/LuxTTS')
+    model_path = snapshot_download('vuhoanhuy/zv')
 
     token_file = f"{model_path}/tokens.txt"
     text_encoder_path = f"{model_path}/text_encoder.onnx"
